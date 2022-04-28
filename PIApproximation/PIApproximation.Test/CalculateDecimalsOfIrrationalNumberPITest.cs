@@ -1,4 +1,4 @@
-using System;
+using PIApproximation.App;
 using System.Collections;
 using Xunit;
 
@@ -27,7 +27,7 @@ namespace PIApproximation.Test
             //Arrange
             ICalculateDecimalsOfIrrationalNumberPI calculateDecimalsOfIrrationalNumberPI = new CalculateDecimalsOfIrrationalNumberPI();
             ArrayList expected = new ArrayList { 1000, 3.1405926538 };
-            double epsilon = 1000, 3.1405926538;
+            double epsilon = 0.001;
 
             //Act
             var actual = calculateDecimalsOfIrrationalNumberPI.IterrationsAndApproximation(epsilon);
